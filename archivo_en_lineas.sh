@@ -22,7 +22,7 @@ mkdir -p "$carpeta_destino"
 i=1
 while IFS= read -r linea; do
   # Crear un nuevo archivo con el contenido de la línea
-  echo "$linea" > "$carpeta_destino/archivo_$i.txt"
+  echo "$linea" > "$carpeta_destino/$i.txt"
   i=$((i+1))
 done < "$archivo_entrada"
 
